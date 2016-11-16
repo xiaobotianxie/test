@@ -1,0 +1,28 @@
+<configuration>
+<property>
+<name>yarn.nodemanager.aux-services</name> <value>mapreduce_shuffle</value>
+</property>
+<property> <name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name> <value>org.apache.hadoop.mapred.ShuffleHandler</value> </property>
+/*resourcemanager   */
+<property>
+<name>yarn.resourcemanager.address</name> <value>Master 8032</value>
+</property>
+/*      */
+<property>
+<name>yarn.resourcemanager.scheduler.address</name>
+<value> Master1 8030</value>
+</property>
+/*resource-tracker  */
+<property> <name>yarn.resourcemanager.resource-tracker.address</name> <value> Master 8031</value>
+</property>
+/*resourcemanager     */
+<property>
+<name>yarn.resourcemanager.admin.address</name>
+<value> Master 8033</value>
+</property>
+/* ResourceManager   Web       job      */
+<property>
+<name>yarn.resourcemanager.webapp.address</name>
+<value> Master 8088</value>
+</property>
+</configuration>
